@@ -1,0 +1,10 @@
+mixin info(data)
+  section.info
+    .container
+      .info__overlay
+      h2.info__title Что входит в тариф?
+      .info__cards
+        each card in data.cards
+          .info__card
+            img(src=card.icon alt="icon card").info__card-icon
+            p.info__card-title= card.title

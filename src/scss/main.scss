@@ -1,0 +1,18 @@
+@import "utils/reset";
+@import "utils/fontface";
+@import "utils/mixins";
+@import "utils/fontface";
+@import "utils/global";
+@import "utils/utils";
+
+@import "parts/header";
+@import "parts/footer";
+
+@import "ui/button";
+
+@import "components/banner";
+@import "components/tariffs";
+@import "components/info";
+@import "components/extra";
+@import "components/application";
+@import "components/faq";

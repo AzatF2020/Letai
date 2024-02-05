@@ -1,0 +1,11 @@
+mixin tariffs(data)
+  section.tariffs
+    .container
+      .tariffs__overlay
+      h2.tariffs__title Почему стоит выбрать «Все и сразу»?
+      .tariffs__cards
+        each card in data.cards
+          .tariffs__card
+            h5.tariffs__card-title= card.title
+            p.tariffs__card-text= card.text
+            img(src=card.icon alt="icon card").tariffs__card-icon

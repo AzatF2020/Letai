@@ -1,0 +1,19 @@
+extends ../layout/index
+
+include ../components/banner
+include ../components/tariffs
+include ../components/info
+include ../components/extra
+include ../components/application
+include ../components/faq
+
+block constants
+  - const title = "Главная"
+
+block page
+  +banner()
+  +tariffs(index.tariffs)
+  +info(index.info)
+  +extra(index.extra)
+  +application()
+  +faq()

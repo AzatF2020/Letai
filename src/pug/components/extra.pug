@@ -1,0 +1,18 @@
+mixin extra(data)
+  section.extra
+    .container
+      h2.extra__title Также, вы можете приобрести дополнительные Sim-карты для близких
+      .extra__card
+        h4.extra__card-title Тариф «Все и сразу для близких»
+        .extra__card-container
+          ul.extra__card-list
+            each list in data.list
+              li.extra__card-item
+                img(src=list.icon alt="icon").extra__card-icon
+                p.extra__card-text= list.text
+          .extra__card-column
+            span.extra__card-wrapper
+              p.extra__card-cost 0₽
+              p.extra__card-cost-text Первый месяц
+            p.extra__bottom-text Далее - 195руб/мес.
+

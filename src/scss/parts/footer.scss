@@ -8,15 +8,15 @@
     grid-template-columns: repeat(4, 1fr);
     gap: 3.2rem;
 
-    //@include mq(lg) {
-    //  grid-template-columns: repeat(2, 1fr);
-    //}
-    //
-    //@include mq(sm) {
-    //  grid-template-columns: repeat(1, 1fr);
-    //  gap: 4rem;
-    //  text-align: center;
-    //}
+    @include breakpoint(laptop) {
+      grid-template-columns: repeat(2, 1fr);
+    }
+
+    @include breakpoint(small-mobile) {
+      grid-template-columns: repeat(1, 1fr);
+      gap: 4rem;
+      text-align: center;
+    }
   }
 
   &__column-title {

@@ -2,7 +2,10 @@ mixin application()
   section.application
     .container
       .application__inner
-        h2.application__title.title Оставьте заявку
+        h2.application__title.title
+          | Остались вопросы?
+          | Оставьте заявку и наш специалист
+          | свяжется с вами в самое ближайшее время
         form.application__form.form(action="" data-need-validation)
           .input.js-validation-wrapper
             input.input__control(type="text" placeholder="Как к Вам обращаться?" required)

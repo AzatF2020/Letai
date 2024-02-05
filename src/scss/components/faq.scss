@@ -7,6 +7,14 @@
     font-size: 5rem;
     color: #2b2b2b;
     margin-bottom: 4.8rem;
+
+    @include breakpoint(tablet) {
+      font-family: var(--font-family);
+      font-weight: 700;
+      font-size: 2.8rem;
+      line-height: 100%;
+      text-align: center;
+    }
   }
 
   &__list-item {
@@ -15,6 +23,13 @@
     font-size: 3.5rem;
     border-radius: 2rem;
     box-shadow: 0 0 3rem 0 rgba(188, 188, 188, 0.48);
+
+    @include breakpoint(tablet) {
+      font-family: var(--font-family);
+      font-weight: 500;
+      font-size: 1.6rem;
+      color: #fff;
+    }
 
     &:last-child {
       margin-bottom: 0;
@@ -33,6 +48,10 @@
     color: white;
     background-color: #fe5000;
     cursor: pointer;
+
+    @include breakpoint(tablet) {
+      padding: 2.7rem 6.2rem 3.2rem 3.2rem;
+    }
   }
 
   &__list-item-cross {
@@ -43,6 +62,12 @@
     width: 5rem;
     height: 5rem;
     transition: all .3s;
+
+    @include breakpoint(tablet) {
+      width: 2rem;
+      height: 2rem;
+      right: 2.7rem;
+    }
   }
 
   &__list-item-content-wrapper {
@@ -52,5 +77,9 @@
   &__list-item-content {
     padding: 2.5rem 12rem 4.4rem 3.2rem;
     color: #2b2b2b;
+
+    @include breakpoint(tablet) {
+      padding: 1rem 2.7rem;
+    }
   }
 }

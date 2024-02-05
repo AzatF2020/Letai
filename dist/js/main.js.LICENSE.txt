@@ -39,6 +39,14 @@
 */
 
 /*!
+ * dist/inputmask
+ * https://github.com/RobinHerbots/Inputmask
+ * Copyright (c) 2010 - 2023 Robin Herbots
+ * Licensed under the MIT license
+ * Version: 5.0.8
+ */
+
+/*!
 * Parsley.js
 * Version 2.9.2 - built Tue, Dec 10th 2019, 6:18 pm
 * http://parsleyjs.org
@@ -233,6 +241,8 @@
 
 /*! ./modules/accordion */
 
+/*! ./modules/burgerModal */
+
 /*! ./mousewheel.mjs */
 
 /*! ./navigation.mjs */
@@ -266,6 +276,8 @@
 /*! ./utils.js */
 
 /*! ./utils.mjs */
+
+/*! ./vendor/inputMask */
 
 /*! ./vendor/lazyload */
 
@@ -302,6 +314,8 @@
 /*! gsap/dist/ScrollTrigger */
 
 /*! imask */
+
+/*! inputmask */
 
 /*! jquery */
 
@@ -347,6 +361,10 @@
   !*** ./node_modules/gsap/index.js ***!
   \************************************/
 
+/*!************************************!*\
+  !*** ./src/js/vendor/inputMask.js ***!
+  \************************************/
+
 /*!*************************************!*\
   !*** ./src/js/modules/accordion.js ***!
   \*************************************/
@@ -354,6 +372,10 @@
 /*!*************************************!*\
   !*** ./src/js/vendor/validation.js ***!
   \*************************************/
+
+/*!***************************************!*\
+  !*** ./src/js/modules/burgerModal.js ***!
+  \***************************************/
 
 /*!****************************************!*\
   !*** ./node_modules/gsap/CSSPlugin.js ***!
@@ -489,6 +511,10 @@
 
 /*!**************************************************!*\
   !*** ./node_modules/imask/esm/masked/pattern.js ***!
+  \**************************************************/
+
+/*!**************************************************!*\
+  !*** ./node_modules/inputmask/dist/inputmask.js ***!
   \**************************************************/
 
 /*!**************************************************!*\

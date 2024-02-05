@@ -22,7 +22,7 @@ html {
   @include container-mixin(var(--header-container-padding));
 
   @include breakpoint(tablet) {
-    @include container-mixin(3.9rem)
+    @include container-mixin(3.7rem)
   }
 }
 

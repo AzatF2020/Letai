@@ -7,6 +7,9 @@ import "./vendor/libs/hystmodal.min.js";
 import Slider from "./vendor/slider";
 import modals from "./vendor/modals";
 import validation from "./vendor/validation";
+import phoneMask from "./vendor/inputMask";
+
+import InitBurgerModal from "./modules/burgerModal"
 import Accordions from "./modules/accordion";
 
 document.addEventListener("DOMContentLoaded", () => {
@@ -14,11 +17,12 @@ document.addEventListener("DOMContentLoaded", () => {
 
   modals()
   validation()
+  phoneMask()
   const sliderInstance = new Slider();
   sliderInstance.initializeSliders();
   
+  InitBurgerModal()
   function accordion() {
-    
     if (!document.querySelector(".js-accordions")) return;
     
     new Accordions({

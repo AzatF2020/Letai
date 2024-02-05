@@ -5,7 +5,7 @@
   align-items: center;
   position: fixed;
   background-color: white;
-  z-index: 1;
+  z-index: 5;
   transition: .3s ease top;
   box-shadow: 0 -6px 21px 0 rgba(52, 52, 52, 0.04), 0 0px 41px 0 rgba(52, 52, 52, 0.06);
 
@@ -15,6 +15,7 @@
     align-items: center;
     justify-content: space-between;
   }
+
   &__logo-wrapper {
     display: block;
     width: 17.5rem;
@@ -22,8 +23,16 @@
     transition: .3s ease opacity;
 
     @include breakpoint(tablet) {
-      width: 12.3rem;
-      height: 2.8rem;
+      width: 11rem;
+      height: 3.8rem;
+    }
+
+    svg {
+      @include breakpoint(tablet) {
+        width: 11rem;
+        height: 3.8rem;
+        object-fit: cover;
+      }
     }
 
     &:hover {
@@ -76,5 +85,23 @@
     &:hover {
       background-color: #ea3e03;
     }
+  }
+
+  &__burger-btn {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    row-gap: 1rem;
+
+    @include breakpointMF(tablet) {
+      display: none;
+    }
+
+    span {
+      display: block;
+      border: 1.5px solid #fe5000;
+      width: 3.8rem;
+    }
+
   }
 }

@@ -32,9 +32,36 @@
               </a>
               <a class="button header__button-contact" href="#">Стать абонентом</a>
             </div>
+            <button class="header__burger-btn js-burger-button"><span></span><span></span><span></span>
+            </button>
           </div>
         </div>
       </header>
+      <div class="burger-modal js-burger-modal">
+        <div class="burger-modal__container">
+          <button class="burger-modal__close js-burger-button">
+
+            <svg xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 -960 960 960" width="24"><path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"/></svg>
+          </button>
+          <div class="burger-modal__links">
+            <a class="button burger-modal__button" href="/#" data-num=""><span class="button-wrapper-text"><span class="burger-modal__button-text" data-text="Services">Мобильная связь</span>
+              </span>
+            </a>
+            <a class="button burger-modal__button" href="/#" data-num=""><span class="button-wrapper-text"><span class="burger-modal__button-text" data-text="Solutions">Интернет</span>
+              </span>
+            </a>
+            <a class="button burger-modal__button" href="/#" data-num=""><span class="button-wrapper-text"><span class="burger-modal__button-text" data-text="About us">Телевидение</span>
+              </span>
+            </a>
+            <a class="button burger-modal__button" href="/#" data-num=""><span class="button-wrapper-text"><span class="burger-modal__button-text" data-text="Contacts">Домофон</span>
+              </span>
+            </a>
+            <a class="button burger-modal__button" href="/#" data-num=""><span class="button-wrapper-text"><span class="burger-modal__button-text" data-text="Contacts">Видеонаблюдение</span>
+              </span>
+            </a>
+          </div>
+        </div>
+      </div>
 
       <main class="page-main">
         <section class="banner">
@@ -140,7 +167,7 @@
         <section class="application">
           <div class="container">
             <div class="application__inner">
-              <h2 class="application__title title">Оставьте заявку</h2>
+              <h2 class="application__title title">Остались вопросы? Оставьте заявку и наш специалист свяжется с вами в самое ближайшее время</h2>
               <form class="application__form form" action="" data-need-validation="data-need-validation">
                 <div class="input js-validation-wrapper">
                   <input class="input__control" type="text" placeholder="Как к Вам обращаться?" required="required">
@@ -160,7 +187,7 @@
         </section>
         <section class="questions">
           <div class="container">
-            <h2 class="questions__title">Часто задаваемые вопросы</h2>
+            <h2 class="questions__title">Ответы на часто задаваемые вопросы:</h2>
             <ul class="questions__list js-accordions">
               <li class="questions__list-item js-accordion">
                 <div class="questions__list-item-title-wrapper js-accordion-btn">

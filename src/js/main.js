@@ -5,7 +5,7 @@ import "./vendor/libs/hystmodal.min.css";
 import "./vendor/libs/hystmodal.min.js";
 
 import Slider from "./vendor/slider";
-import modals from "./vendor/modals";
+import initModal from "./vendor/initModal";
 import validation from "./vendor/validation";
 import phoneMask from "./vendor/inputMask";
 
@@ -14,8 +14,9 @@ import Accordions from "./modules/accordion";
 
 document.addEventListener("DOMContentLoaded", () => {
   window.letai = {};
-
-  modals()
+  window.letai.modal = {}
+  
+  initModal();
   validation()
   phoneMask()
   const sliderInstance = new Slider();

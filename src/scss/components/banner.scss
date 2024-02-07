@@ -2,6 +2,7 @@
   width: 100%;
   min-height: 100vh;
   position: relative;
+  padding-top: 11.5rem;
 
   .container {
     @include breakpoint(tablet) {
@@ -20,9 +21,8 @@
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    min-height: calc(100vh - 7.5rem);
-    min-height: calc(100svh - 7.5rem);
-    max-width: 1920rem;
+    height: calc(100vh - 7.5rem);
+    width: 100%;
     z-index: -1;
 
     @include breakpoint(tablet) {
@@ -38,7 +38,7 @@
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-    row-gap: 20rem;
+    row-gap: 15rem;
     position: relative;
     z-index: 2;
 

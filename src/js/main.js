@@ -11,6 +11,7 @@ import phoneMask from "./vendor/inputMask";
 
 import InitBurgerModal from "./modules/burgerModal"
 import Accordions from "./modules/accordion";
+import InitAnchors from './modules/anchors.js';
 
 document.addEventListener("DOMContentLoaded", () => {
   window.letai = {};
@@ -23,6 +24,7 @@ document.addEventListener("DOMContentLoaded", () => {
   sliderInstance.initializeSliders();
   
   InitBurgerModal()
+  InitAnchors()
   function accordion() {
     if (!document.querySelector(".js-accordions")) return;
     

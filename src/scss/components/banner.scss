@@ -21,15 +21,26 @@
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    height: calc(100vh - 7.5rem);
+    min-height: calc(100vh - 7.5rem);
     width: 100%;
     z-index: -1;
 
     @include breakpoint(tablet) {
-      min-height: 0;
-      height: calc(100vh - 10rem);
+      min-height: calc(100vh - 10rem);
       background-image: url("../assets/img/banner-mobile.jpg");
       z-index: 0;
+    }
+  }
+
+  &__tariffs-img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    position: relative;
+    left: -15rem;
+
+    @include breakpoint(laptop) {
+      display: none;
     }
   }
 
@@ -38,13 +49,11 @@
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-    row-gap: 15rem;
     position: relative;
     z-index: 2;
-
+      
     @include breakpoint(tablet) {
       height: 100%;
-      row-gap: 1rem;
       justify-content: flex-end;
     }
   }
@@ -57,6 +66,8 @@
     color: #000;
     width: 100%;
     max-width: 63.5rem;
+    margin-bottom: 15rem;
+    
 
     @include breakpoint(tablet) {
       font-family: var(--font-family);
@@ -64,6 +75,7 @@
       font-size: 4rem;
       line-height: 100%;
       color: #000;
+      margin-bottom: 1rem;
     }
   }
 

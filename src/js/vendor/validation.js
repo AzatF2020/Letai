@@ -425,7 +425,7 @@ export default function validation() {
     
     
     
-    form.addEventListener("submit", (e) => {
+    /*form.addEventListener("submit", (e) => {
       e.preventDefault();
       let formData = new FormData(form);
       const url = form.getAttribute("action");
@@ -445,6 +445,6 @@ export default function validation() {
             window.letai.modal.onOpen("modal-error");
           });
       }
-    });
+    });*/
   });
 }

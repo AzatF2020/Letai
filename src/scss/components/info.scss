@@ -90,8 +90,7 @@
   }
 
   &__card-icon {
-    width: auto;
-    height: 10.1rem;
+    width: 8.4rem;
     object-fit: cover;
 
     @include breakpoint(tablet) {
